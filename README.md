@@ -5,18 +5,27 @@ The NexploreHK Todo List Backend is a RESTful API built to manage a Todo List, a
 ### Features
 
 • Create, Read, Update, and Delete tasks.
+
 • Transaction management to maintain data consistency.
+
 • Error handling and validation for robust API responses.
+
 • Unit and integration tests using Jest to ensure code quality.
+
 • Docker integration for easy database management and consistency across environments.
 
 ### Technologies Used
 
 • Node.js
+
 • Express
+
 • PostgreSQL
+
 • Jest
+
 • Docker
+
 • Supertest
 
 ### Ensure you have the following installed:
@@ -47,8 +56,6 @@ The NexploreHK Todo List Backend is a RESTful API built to manage a Todo List, a
 
 2.  Environment Variables
 
-    # .env
-
     - Create a .env file in the root of the project with the following variables:
 
       ```.env
@@ -56,8 +63,6 @@ The NexploreHK Todo List Backend is a RESTful API built to manage a Todo List, a
           PORT=3000
           NODE_ENV=development
       ```
-
-      # .env.test
 
     - Create a .env.test file for test environment setup:
 
@@ -81,7 +86,7 @@ The NexploreHK Todo List Backend is a RESTful API built to manage a Todo List, a
       $ npm run dev
       ```
 
-    - The server will start on http://localhost:3000.
+    - The server will start on http://localhost:8080.
 
 5.  Testing
 
