@@ -47,7 +47,7 @@ The NexploreHK Todo List Backend is a RESTful API built to manage a Todo List, a
       1. Clone the repository:
 
          ```bash
-             $ git clone https://github.com/yourusername/nexplorehk_todo_list_backend.git
+             $ git clone https://github.com/hyhyromeo/nexplorehk_todo_list_backend.git
              $ cd nexplorehk_todo_list_backend
          ```
 
