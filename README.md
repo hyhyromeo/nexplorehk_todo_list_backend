@@ -1,42 +1,42 @@
 # nexplorehk_todo_list_backend
 
-    The NexploreHK Todo List Backend is a RESTful API built to manage a Todo List, allowing users to perform CRUD operations on tasks. This project demonstrates the full backend development lifecycle, including environment setup, database integration, API development, and testing.
+The NexploreHK Todo List Backend is a RESTful API built to manage a Todo List, allowing users to perform CRUD operations on tasks. This project demonstrates the full backend development lifecycle, including environment setup, database integration, API development, and testing.
 
 ### Features
 
-    • Create, Read, Update, and Delete tasks.
+• Create, Read, Update, and Delete tasks.
 
-    • Transaction management to maintain data consistency.
+• Transaction management to maintain data consistency.
 
-    • Error handling and validation for robust API responses.
+• Error handling and validation for robust API responses.
 
-    • Unit and integration tests using Jest to ensure code quality.
+• Unit and integration tests using Jest to ensure code quality.
 
-    • Docker integration for easy database management and consistency across environments.
+• Docker integration for easy database management and consistency across environments.
 
 ### Technologies Used
 
-    • Node.js
+• Node.js
 
-    • Express
+• Express
 
-    • PostgreSQL
+• PostgreSQL
 
-    • Jest
+• Jest
 
-    • Docker
+• Docker
 
-    • Supertest
+• Supertest
 
 ### Ensure you have the following installed:
 
-    • Node.js (v14.x or later)
+• Node.js (v14.x or later)
 
-    • npm (v6.x or later)
+• npm (v6.x or later)
 
-    • Docker (for database setup)
+• Docker (for database setup)
 
-    • PostgreSQL (optional, if not using Docker)
+• PostgreSQL (optional, if not using Docker)
 
 ### To start up the project :
 
@@ -101,12 +101,18 @@
 
 ### API Documentation
 
-    Endpoints
+- Endpoints
 
-        •	GET /tasks: Fetch all tasks.
-        •	GET /tasks/todoTasks: Fetch all pending tasks.
-        •	GET /tasks/inProgressTasks: Fetch all inProgress tasks.
-        •	GET /tasks/completedTasks: Fetch all completed tasks.
-        •	POST /tasks: Create a new task.
-        •	PUT /tasks/:id: Update a task by ID.
-        •	DELETE /tasks/:id: Delete a task by ID.
+  • GET /tasks: Fetch all tasks.
+
+  • GET /tasks/todoTasks: Fetch all pending tasks.
+
+  • GET /tasks/inProgressTasks: Fetch all inProgress tasks.
+
+  • GET /tasks/completedTasks: Fetch all completed tasks.
+
+  • POST /tasks: Create a new task.
+
+  • PUT /tasks/:id: Update a task by ID.
+
+  • DELETE /tasks/:id: Delete a task by ID.
