@@ -1,0 +1,31 @@
+### READ
+GET http://localhost:3000/tasks
+
+### READ Todos
+GET http://localhost:3000/tasks/todoTasks
+### READ inProgress 
+GET http://localhost:3000/tasks/inProgressTasks
+### READ completed
+GET http://localhost:3000/tasks/completedTasks
+
+### CREATE
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "title": "New Task",
+    "description": "New description",
+    "status": "pending"
+}
+### UPDATE
+PUT http://localhost:3000/tasks/14
+Content-Type: application/json
+
+{
+    "title": "Updated test Task",
+    "description": "Updated description",
+    "status": "inprogress"
+}
+
+### DELETE
+PUT http://localhost:3000/tasks/delete/4
