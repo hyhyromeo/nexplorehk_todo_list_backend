@@ -1,7 +1,9 @@
 import { Pool } from "pg";
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString:
+    process.env.DATABASE_URL ||
+    "postgresql://romeo:romeo@localhost:5432/nexplorehk_todo_list",
 });
 
 // Check Database Connection

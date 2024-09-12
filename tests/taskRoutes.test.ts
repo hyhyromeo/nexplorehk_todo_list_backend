@@ -7,8 +7,6 @@ const app = express();
 app.use(express.json());
 app.use("/tasks", taskRoutes);
 
-console.log("Database URL:", process.env.DATABASE_URL);
-
 // Before all tests, set up the schema
 beforeAll(async () => {
   const setupSchema = async () => {

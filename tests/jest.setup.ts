@@ -32,30 +32,9 @@ const setupTestDB = async () => {
 const testDBConnectionString = process.env.DATABASE_URL;
 const pool = new Pool({ connectionString: testDBConnectionString });
 
-const setupSchema = async () => {
-  try {
-    // Directly execute SQL to create tables
-    await pool.query(`
-      CREATE TABLE IF NOT EXISTS tasks (
-        id SERIAL PRIMARY KEY,
-        title VARCHAR(255) NOT NULL,
-        description TEXT,
-        status VARCHAR(50) DEFAULT 'pending',
-        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-      );
-    `);
-    console.log("Test TABLE created successfully.");
-  } catch (error: any) {
-    console.error("Error setting up schema:", error.message);
-    throw error;
-  }
-};
-
 // Ensure both database creation and schema setup are completed before tests run
 const setupTestEnvironment = async () => {
   await setupTestDB(); // Create the test database
-  //   await setupSchema(); // Set up the schema in the test database
 };
 
 // Run the setup function
